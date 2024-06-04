@@ -1,19 +1,17 @@
 #include <stdio.h>
 int main()
 {
-    int n;
+   int n;
     scanf("%d", &n);
-    for (int i = 1; i <= n; i++)
+  for (int i = 1; i < n; i++)
+  {
+      if (n % 3 == 0 || n % 7 == 0 )
     {
-        if (i % 5 == 0)
-        {
-            printf("%d Yes\n",i);
-        }
-        else
-        {
-            printf("%d No\n",i);
-        }
+        printf("%d\n",n);
     }
-
+    
+  }
+  
+    
     return 0;
 }
